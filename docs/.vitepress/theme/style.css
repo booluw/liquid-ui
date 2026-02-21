@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customize the VitePress default theme if needed */
+:root {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+}
+
+/* Background gradient for the beautiful glass effect to stand out */
+body {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.dark body {
+  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+}
+
+/* Overriding VitePress content styling to let our backgrounds show through transparently if desired */
+.vp-doc {
+  background: transparent !important;
+}
