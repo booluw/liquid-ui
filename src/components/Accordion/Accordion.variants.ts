@@ -6,7 +6,8 @@ export const accordionVariants = tv({
  item:'overflow-hidden',
  header:'flex',
  trigger: [
-'flex flex-1 items-center justify-between px-6 py-4 font-medium transition-all duration-300',
+ 'transition-all duration-200 ease-out active:scale-[0.98]',
+'transition-all duration-200 ease-out active:scale-[0.98] flex flex-1 items-center justify-between px-6 py-4 font-medium transition-all duration-300',
 'hover:bg-white/10',
 'text-black',
 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:bg-white/10',

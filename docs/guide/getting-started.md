@@ -4,6 +4,15 @@ Welcome to **Liquid Glass UI**, a stunningly beautiful Vue 3 component library b
 
 ## Installation
 
+### Local Development / Usage
+Since the library isn't on NPM yet, you can use it locally in any standard Vue project by linking to it directly via your `package.json`:
+
+```bash
+# Point to your local liquid-glass-ui cloned directory
+npm install file:../liquid-glass-ui
+```
+
+### Production / NPM
 Assuming the package is published to npm, you would install it like this:
 
 ```bash

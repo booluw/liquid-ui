@@ -38,6 +38,27 @@ export * from './components/Menu/Menu.variants';
 export { default as LProgress } from './components/Progress/Progress.vue';
 export * from './components/Progress/Progress.variants';
 
+export { default as LTooltip } from './components/Tooltip/Tooltip.vue';
+export * from './components/Tooltip/Tooltip.variants';
+
+export { default as LBadge } from './components/Badge/Badge.vue';
+export * from './components/Badge/Badge.variants';
+
+export { default as LCheckbox } from './components/Checkbox/Checkbox.vue';
+export * from './components/Checkbox/Checkbox.variants';
+
+export { default as LRadioGroup } from './components/Radio/RadioGroup.vue';
+export { default as LRadioItem } from './components/Radio/RadioItem.vue';
+export * from './components/Radio/Radio.variants';
+
+export { default as LToast } from './components/Toast/Toast.vue';
+export { default as LToaster } from './components/Toast/Toaster.vue';
+export * from './components/Toast/Toast.variants';
+export { useToast } from './composables/useToast';
+
+export { default as LAvatar } from './components/Avatar/Avatar.vue';
+export * from './components/Avatar/Avatar.variants';
+
 export { cn } from './utils/cn';
 
 // Export the plugin for global registration

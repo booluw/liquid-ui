@@ -35,6 +35,12 @@ export default defineConfig({
           { text: 'Slider', link: '/components/slider' },
           { text: 'Popover', link: '/components/popover' },
           { text: 'Menu', link: '/components/menu' },
+          { text: 'Tooltip', link: '/components/tooltip' },
+          { text: 'Badge', link: '/components/badge' },
+          { text: 'Checkbox', link: '/components/checkbox' },
+          { text: 'Radio Group', link: '/components/radio' },
+          { text: 'Toast', link: '/components/toast' },
+          { text: 'Avatar', link: '/components/avatar' },
           { text: 'Progress Indicator', link: '/components/progress' }
         ]
       }

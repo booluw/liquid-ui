@@ -2,7 +2,7 @@ import { tv, type VariantProps } from'tailwind-variants';
 
 export const buttonVariants = tv({
  base: [
-'inline-flex items-center justify-center rounded-xl font-medium transition-all duration-300',
+'transition-all duration-200 ease-out active:scale-[0.98] inline-flex items-center justify-center rounded-xl font-medium transition-all duration-300',
 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
 'disabled:pointer-events-none disabled:opacity-50',
  // Liquid glass base effect:

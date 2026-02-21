@@ -3,7 +3,8 @@ import { tv, type VariantProps } from'tailwind-variants';
 export const switchVariants = tv({
  slots: {
  root: [
-'peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-200',
+ 'transition-all duration-200 ease-out active:scale-[0.98]',
+'transition-all duration-200 ease-out active:scale-[0.98] peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-200',
 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-background',
 'disabled:cursor-not-allowed disabled:opacity-50',
 'bg-white/30 backdrop-blur-[30px] backdrop-saturate-[180%] shadow-[inset_0_1px_3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.2)]',

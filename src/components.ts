@@ -12,6 +12,14 @@ import Slider from './components/Slider/Slider.vue';
 import Popover from './components/Popover/Popover.vue';
 import Menu from './components/Menu/Menu.vue';
 import Progress from './components/Progress/Progress.vue';
+import Tooltip from './components/Tooltip/Tooltip.vue';
+import Badge from './components/Badge/Badge.vue';
+import Checkbox from './components/Checkbox/Checkbox.vue';
+import RadioGroup from './components/Radio/RadioGroup.vue';
+import RadioItem from './components/Radio/RadioItem.vue';
+import Toast from './components/Toast/Toast.vue';
+import Toaster from './components/Toast/Toaster.vue';
+import Avatar from './components/Avatar/Avatar.vue';
 
 export {
   Button,
@@ -27,5 +35,13 @@ export {
   Slider,
   Popover,
   Menu,
-  Progress
+  Progress,
+  Tooltip,
+  Badge,
+  Checkbox,
+  RadioGroup,
+  RadioItem,
+  Toast,
+  Toaster,
+  Avatar
 };
