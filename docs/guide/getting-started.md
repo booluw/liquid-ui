@@ -19,32 +19,33 @@ Assuming the package is published to npm, you would install it like this:
 npm install liquid-glass-ui
 ```
 
-You'll also need to ensure you have Tailwind CSS installed in your project:
+You'll also need to ensure you have Tailwind CSS v4 installed in your project:
 
 ```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+npm install tailwindcss @tailwindcss/vite
 ```
 
 ## Tailwind Configuration
 
-Since Liquid Glass UI uses Tailwind for styling, you must include its paths in your `tailwind.config.js` so Tailwind knows to scan the library for classes.
+Since Liquid Glass UI uses Tailwind for styling, you must include the Vite plugin and standard CSS import. 
 
+**`vite.config.ts`**
 ```javascript
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    // Add the UI library path:
-    "./node_modules/liquid-glass-ui/dist/**/*.js" 
-  ],
-  darkMode: 'class', // Recommended for toggling dark/glass modes
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import tailwindcss from '@tailwindcss/vite';
+
+export default defineConfig({
+  plugins: [vue(), tailwindcss()],
+})
+```
+
+**`src/style.css` (or your main css file)**
+```css
+@import "tailwindcss";
+
+/* Point Tailwind's v4 scanner to the library's pre-compiled files so it can generate the utility classes */
+@source "../node_modules/liquid-glass-ui/dist/**/*.js";
 ```
 
 ## Usage

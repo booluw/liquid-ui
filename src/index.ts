@@ -1,3 +1,4 @@
+import './theme.css';
 export { default as LButton } from './components/Button/Button.vue';
 export * from './components/Button/Button.variants';
 

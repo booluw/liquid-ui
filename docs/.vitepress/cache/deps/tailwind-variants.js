@@ -3,7 +3,7 @@ import {
   twMerge
 } from "./chunk-6GSTXHZO.js";
 
-// node_modules/.pnpm/tailwind-variants@0.2.1_tailwindcss@3.4.19/node_modules/tailwind-variants/dist/chunk-JXBJZR5A.js
+// node_modules/.pnpm/tailwind-variants@0.2.1_tailwindcss@4.2.0/node_modules/tailwind-variants/dist/chunk-JXBJZR5A.js
 var l = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e;
 var u = (e) => !e || typeof e != "object" || Object.keys(e).length === 0;
 var x = (e, o) => JSON.stringify(e) === JSON.stringify(o);
@@ -28,7 +28,7 @@ var p = (e, o) => {
 };
 var g = (e) => !e || typeof e != "string" ? e : e.replace(/\s+/g, " ").trim();
 
-// node_modules/.pnpm/tailwind-variants@0.2.1_tailwindcss@3.4.19/node_modules/tailwind-variants/dist/index.js
+// node_modules/.pnpm/tailwind-variants@0.2.1_tailwindcss@4.2.0/node_modules/tailwind-variants/dist/index.js
 var ie = { twMerge: true, twMergeConfig: {}, responsiveVariants: false };
 var _ = (s) => s || void 0;
 var M = (...s) => _(y(s).filter(Boolean).join(" "));

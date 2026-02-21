@@ -1,11 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-glass-ultra-thin: var(--glass-base-ultra-thin);
+  --color-glass-thin: var(--glass-base-thin);
+  --color-glass-regular: var(--glass-base-regular);
+  --color-glass-thick: var(--glass-base-thick);
+  --color-glass-border: var(--glass-border);
+  --color-glass-highlight: var(--glass-highlight);
+  --shadow-glass-sm: var(--glass-shadow-sm);
+  --shadow-glass-md: var(--glass-shadow-md);
+  --shadow-glass-lg: var(--glass-shadow-lg);
+}
+
+@source "../../../src/**/*.{vue,js,ts,jsx,tsx}";
+@source "../../**/*.md";
+@source "./**/*.{js,ts,vue}";
 
 /* Customize the VitePress default theme if needed */
 :root {
   --vp-c-brand-1: #3b82f6;
   --vp-c-brand-2: #2563eb;
+  
+  /* Glass Design System Core */
+  --glass-base-ultra-thin: rgba(255, 255, 255, 0.05);
+  --glass-base-thin: rgba(255, 255, 255, 0.1);
+  --glass-base-regular: rgba(255, 255, 255, 0.2);
+  --glass-base-thick: rgba(255, 255, 255, 0.4);
+  
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-highlight: rgba(255, 255, 255, 0.3);
+  
+  --glass-text-primary: #000000;
+  --glass-text-secondary: #8E8E93;
+  
+  --glass-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --glass-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --glass-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  
+  /* Component Specific */
+  --glass-button-bg: rgba(255, 255, 255, 0.7);
+  --glass-button-hover: rgba(255, 255, 255, 0.5);
+  
+  --glass-card-bg: rgba(255, 255, 255, 0.5);
 }
 
 /* Background gradient for the beautiful glass effect to stand out */

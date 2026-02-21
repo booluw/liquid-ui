@@ -2,11 +2,11 @@ import { tv, type VariantProps } from 'tailwind-variants';
 
 export const avatarVariants = tv({
   slots: {
-    root: 'relative flex shrink-0 overflow-hidden rounded-full border border-black/10 shadow-[0_4px_12px_rgba(0,0,0,0.05)]',
+    root: 'relative flex shrink-0 overflow-hidden rounded-full shadow-[inset_0_1px_0_0_var(--glass-highlight),inset_0_0_0_1px_var(--glass-border),var(--glass-shadow-sm)]',
     image: 'aspect-square h-full w-full object-cover',
     fallback: [
-      'flex h-full w-full items-center justify-center rounded-full font-medium text-black',
-      'bg-black/5 backdrop-blur-[20px] backdrop-saturate-[180%]'
+      'flex h-full w-full items-center justify-center rounded-full font-medium text-[var(--glass-text-primary)]',
+      'bg-[var(--glass-base-thin)] backdrop-blur-[10px] backdrop-saturate-[160%]'
     ]
   },
   variants: {

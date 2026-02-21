@@ -24,13 +24,13 @@ const { root, item, header, trigger, icon, content, contentInner } = accordionVa
 </script>
 
 <template>
- <AccordionRoot :type="type":default-value="defaultValue":class="root()">
- <AccordionItem v-for="i in items":key="i.value":value="i.value":class="item()">
+ <AccordionRoot :type="type" :default-value="defaultValue" :class="root()">
+ <AccordionItem v-for="i in items" :key="i.value" :value="i.value" :class="item()">
  <AccordionHeader :class="header()">
  <AccordionTrigger :class="trigger()">
- <slot name="title":item="i">{{ i.title }}</slot>
- <svg xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"
- stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round":class="icon()">
+ <slot name="title" :item="i">{{ i.title }}</slot>
+ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+ stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" :class="icon()">
  <polyline points="6 9 12 15 18 9"></polyline>
  </svg>
  </AccordionTrigger>

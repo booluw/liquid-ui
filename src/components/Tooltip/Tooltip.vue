@@ -40,7 +40,7 @@ const slots = tooltipVariants();
 
       <TooltipPortal>
         <TooltipContent :side-offset="sideOffset" :class="cn(slots.content(), contentClass)">
-          <slot>{{ content }}</slot>
+          <slot name="content">{{ content }}</slot>
           <TooltipArrow v-if="showArrow" :class="slots.arrow()" :width="12" :height="6" />
         </TooltipContent>
       </TooltipPortal>

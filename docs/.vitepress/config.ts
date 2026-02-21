@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import tailwindcss from '@tailwindcss/vite';
 import { resolve } from 'path';
 
 // https://vitepress.dev/reference/site-config
@@ -51,6 +52,7 @@ export default defineConfig({
     ]
   },
   vite: {
+    plugins: [tailwindcss()],
     ssr: {
       noExternal: ['tailwind-variants', 'radix-vue']
     },

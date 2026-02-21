@@ -1,0 +1,56 @@
+:root {
+  /* Material Base Colors */
+  --glass-base-ultra-thin: rgba(255, 255, 255, 0.4);
+  --glass-base-thin: rgba(255, 255, 255, 0.5);
+  --glass-base-regular: rgba(255, 255, 255, 0.6);
+  --glass-base-thick: rgba(255, 255, 255, 0.7);
+
+  /* Borders & Highlights */
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-highlight: rgba(255, 255, 255, 0.4);
+  
+  /* Text & Content (Simulated Vibrancy) */
+  --glass-text-primary: rgba(0, 0, 0, 0.85);
+  --glass-text-secondary: rgba(60, 60, 67, 0.6);
+  --glass-text-tertiary: rgba(60, 60, 67, 0.3);
+  
+  /* Shadows */
+  --glass-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --glass-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --glass-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  /* Component Specifics */
+  --glass-button-bg: var(--glass-base-thick);
+  --glass-button-hover: rgba(255, 255, 255, 0.85);
+}
+
+.dark {
+  /* Material Base Colors */
+  --glass-base-ultra-thin: rgba(25, 25, 25, 0.4);
+  --glass-base-thin: rgba(30, 30, 30, 0.5);
+  --glass-base-regular: rgba(40, 40, 40, 0.6);
+  --glass-base-thick: rgba(50, 50, 50, 0.7);
+
+  /* Borders & Highlights */
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.15);
+  
+  /* Text & Content */
+  --glass-text-primary: rgba(255, 255, 255, 0.9);
+  --glass-text-secondary: rgba(235, 235, 245, 0.6);
+  --glass-text-tertiary: rgba(235, 235, 245, 0.3);
+  
+  /* Shadows */
+  --glass-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --glass-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --glass-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+
+  /* Component Specifics */
+  --glass-button-bg: rgba(255, 255, 255, 0.1);
+  --glass-button-hover: rgba(255, 255, 255, 0.15);
+}
+
+/* System Fonts */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+}
